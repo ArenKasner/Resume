@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<!-- passed WC3 file upload on 11/21/13 -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>KasnerGuessingGame3</title>
+     <link rel="stylesheet" href="guessingGameStyleSheet3.css" type="text/css" />
+
+</head>
+    
+
+<body>
+    <div id="startArea">
+<input type="button" id="startGame" value="Start Game"
+     onclick="document.getElementById('gameAreaDesktop').style.visibility = 'visible'" />
+    </div>
+    <br />
+
+    <div id="gameAreaDesktop">
+<div id="playArea">
+<input id="input" type="text" placeholder="Enter your number..." onkeypress="searchKeyPress(event);"/>
+<input type="button" id="guess" value="Guess"/>
+
+</div>
+<br /><br />
+
+<div id="playSpace">
+<p id="round"> </p>
+<p id="output">Guess a number between 1 and 20 </p>
+
+
+
+<img src="images/Plain.jpg" width="400" height="250" alt="Neutral" id="pictureObject" />
+</div>
+
+    </div>
+    <script src="ScriptGuessingGame3.js"></script>
+
+ 
+</body>
+</html>
